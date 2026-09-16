@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="refresh" content="600" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Planning phase 1</title>
+  </head>
+  <body class="select-none">
+    <div
+      class="flex top-0 w-full h-12 bg-gray-400 items-center justify-between m-0 p-1"
+    >
+      <div class="flex items-center w-fit h-full">
+        <img src="logo.png" alt="" class="w-12 h-full" />
+      </div>
+      <span class="opacity-75 w-fit font-semibold text-gray-900">
+        Planning phase 1
+      </span>
+      <div class="flex items-center justify-end w-12">
+        <div
+          class="flex items-center justify-center cursor-pointer bg-red-700 font-bold rounded-lg p-2 border"
+          onclick="
+            localStorage.clear();
+            location.reload();
+          "
+        >
+          <span class="flex h-full !font-sans">
+            <i class="fa-solid fa-power-off"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="global-container"></div>
+    <script type="module" src="init.js"></script>
+  </body>
+</html>
