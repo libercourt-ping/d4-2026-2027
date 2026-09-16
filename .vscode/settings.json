@@ -1,0 +1,19 @@
+{
+  "css.customData": [".vscode/tailwind.json"],
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "html": "html",
+    "javascript": "javascript",
+    "svg": "svg"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss" // ← traite les .css comme tailwindcss
+  },
+  "tailwindCSS.experimental.classRegex": [
+    // ← patterns pour détecter les classes dans le JS
+    ["classList\\.add\\(([^)]*)\\)", "'([^']*)'"],
+    ["classList\\.add\\(([^)]*)\\)", "\"([^\"]*)\""],
+  ]
+}
