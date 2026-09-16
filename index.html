@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="refresh" content="300" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Planning phase 1</title>
+  </head>
+  <body class="select-none">
+    <div
+      class="relative flex top-0 w-full h-12 bg-gray-400 items-center justify-center m-0 p-0"
+    >
+      <span class="opacity-50"> Planning phase 1 </span>
+      <div
+        class="flex items-center absolute right-2 cursor-pointer bg-red-500 font-bold rounded-lg p-2 text-white"
+      >
+        <span class="flex h-full !font-sans" onclick="localStorage.clear(); location.reload()">
+          <i class="fa-solid fa-power-off"></i>
+        </span>
+      </div>
+    </div>
+    <div id="global-container"></div>
+    <script type="module" src="init.js"></script>
+  </body>
+</html>
